@@ -31,17 +31,14 @@ public class Main2 {
 				String message = searchProduct(enteredValue, productList);
 				System.out.println(message + "\r\n");
 				
-			} 
-
-			if (enteredValue.equals("2")) {
+			} else if (enteredValue.equals("2")) {
 
 				System.out.print("Enter Product name to add: ");
 				enteredValue = input.next();
 				productList.add(enteredValue);
 				System.out.println("Product added : " + enteredValue + "\r\n");
-			}
-
-			if (enteredValue.equals("3")) {
+				
+			} else if (enteredValue.equals("3")) {
 				System.out.println("All Products: ");
 				for (String string : productList) {
 					System.out.println(string);
