@@ -23,7 +23,8 @@ public class Main2 {
 		
 		while (!enteredValue.equals("4")) {
 			
-			enteredValue = menuList(input);
+			menuList();
+			enteredValue = input.next();
 			if (enteredValue.equals("1")) {
 
 				System.out.print("Enter Product name to search: ");
@@ -59,7 +60,7 @@ public class Main2 {
 		
 	
 	
-	private static String menuList(Scanner input) {
+	private static void menuList() {
 
 		System.out.println("Select an option");
 		System.out.println("1. Search a product");
@@ -67,8 +68,6 @@ public class Main2 {
 		System.out.println("3. Print all products and count");
 		System.out.println("4. Exit");
 		System.out.print("> ");
-		String enteredValue = input.next();
-		return enteredValue;
 	}	
 	
 	
